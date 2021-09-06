@@ -42,7 +42,7 @@ try {
 		"username": username,
 		"repo": repo,
 		"branch": branch,
-		"timestamp": new Date().toTimeString()
+		"timestamp": new Date().toISOString()
 	};
 
 	core.setOutput("info", JSON.stringify(info));
