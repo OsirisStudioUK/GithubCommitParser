@@ -1,10 +1,5 @@
 name: 'Github Commit Parse'
 description: 'Parse a Commit with some basic information'
-inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
-    required: true
-    default: 'World'
 outputs:
   info: # id of output
     description: 'A JSON String of the post info'
