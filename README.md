@@ -1,2 +1,2 @@
-# DiscordPoster
-For Posting stuff to discord
+# Parser For Github
+Parse Commits and get a json string out of it
