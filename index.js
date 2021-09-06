@@ -21,8 +21,9 @@ try {
 		return;
 	}
 
+
 	let ref = github.context.ref;
-	let branch = res.replace(/^refs\/(heads|tags)\//, '');
+	let branch = ref.replace(/^refs\/(heads|tags)\//, '');
 
 	let username = github.context.actor;
 	let repo = github.context.repo.repo;
