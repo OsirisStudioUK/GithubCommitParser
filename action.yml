@@ -6,8 +6,8 @@ inputs:
     required: true
     default: 'World'
 outputs:
-  time: # id of output
-    description: 'The time we greeted you'
+  info: # id of output
+    description: 'A JSON String of the post info'
 runs:
   using: 'node12'
   main: 'index.js'
