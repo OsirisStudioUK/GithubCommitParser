@@ -29,6 +29,8 @@ try {
 	let repo = github.context.repo.repo;
 
 
+	console.log(JSON.stringify(github.context.payload.commits))
+
 	let commitMessage = github.context.payload.commits[0].message;
 	// explode commit message on new line
 	let commitMessageArray = commitMessage.split("\n\n");
@@ -46,7 +48,7 @@ try {
 	};
 
 	core.setOutput("info", JSON.stringify(info));
-	console.log( JSON.stringify(info));
+	// console.log( JSON.stringify(info));
 
 } catch (error) {
   core.setFailed(error.message);
